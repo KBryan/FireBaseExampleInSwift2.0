@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0DB810C5B8326F9B5469ECD9 /* libPods-Firebase.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C364257D4E77B3E846E0CE5A /* libPods-Firebase.a */; };
 		7809C4FC1BE94BAE00E0944D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7809C4FB1BE94BAE00E0944D /* AppDelegate.swift */; };
 		7809C4FE1BE94BAF00E0944D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7809C4FD1BE94BAF00E0944D /* ViewController.swift */; };
 		7809C5011BE94BAF00E0944D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7809C4FF1BE94BAF00E0944D /* Main.storyboard */; };
@@ -14,7 +15,8 @@
 		7809C5061BE94BAF00E0944D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7809C5041BE94BAF00E0944D /* LaunchScreen.storyboard */; };
 		7809C5111BE94BAF00E0944D /* FirebaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7809C5101BE94BAF00E0944D /* FirebaseTests.swift */; };
 		7809C51C1BE94BAF00E0944D /* FirebaseUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7809C51B1BE94BAF00E0944D /* FirebaseUITests.swift */; };
-		89E2643C72F5FA22E21B6FD6 /* Pods_Firebase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 221CD9B0FB5D61E8DA515CBC /* Pods_Firebase.framework */; };
+		7831291D1BEA2C8E00BD3F2E /* Bridge-Header.m in Sources */ = {isa = PBXBuildFile; fileRef = 7831291C1BEA2C8E00BD3F2E /* Bridge-Header.m */; };
+		78E83E111BEA297700016698 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78E83E101BEA297700016698 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +38,6 @@
 
 /* Begin PBXFileReference section */
 		11B0C5D06DA44C8ED574DDB3 /* Pods-Firebase.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Firebase.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Firebase/Pods-Firebase.debug.xcconfig"; sourceTree = "<group>"; };
-		221CD9B0FB5D61E8DA515CBC /* Pods_Firebase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Firebase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7809C4F81BE94BAE00E0944D /* Firebase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Firebase.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7809C4FB1BE94BAE00E0944D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7809C4FD1BE94BAF00E0944D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -50,7 +51,12 @@
 		7809C5171BE94BAF00E0944D /* FirebaseUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FirebaseUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7809C51B1BE94BAF00E0944D /* FirebaseUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseUITests.swift; sourceTree = "<group>"; };
 		7809C51D1BE94BAF00E0944D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7831291A1BEA2C8E00BD3F2E /* Firebase-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Firebase-Bridging-Header.h"; sourceTree = "<group>"; };
+		7831291B1BEA2C8E00BD3F2E /* Bridge-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Bridge-Header.h"; sourceTree = "<group>"; };
+		7831291C1BEA2C8E00BD3F2E /* Bridge-Header.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Bridge-Header.m"; sourceTree = "<group>"; };
+		78E83E101BEA297700016698 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		878BADF188578F2A8DB33C1D /* Pods-Firebase.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Firebase.release.xcconfig"; path = "Pods/Target Support Files/Pods-Firebase/Pods-Firebase.release.xcconfig"; sourceTree = "<group>"; };
+		C364257D4E77B3E846E0CE5A /* libPods-Firebase.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Firebase.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				89E2643C72F5FA22E21B6FD6 /* Pods_Firebase.framework in Frameworks */,
+				0DB810C5B8326F9B5469ECD9 /* libPods-Firebase.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -113,12 +119,16 @@
 		7809C4FA1BE94BAE00E0944D /* Firebase */ = {
 			isa = PBXGroup;
 			children = (
+				78E83E0F1BEA296800016698 /* Constants */,
 				7809C4FB1BE94BAE00E0944D /* AppDelegate.swift */,
 				7809C4FD1BE94BAF00E0944D /* ViewController.swift */,
+				7831291B1BEA2C8E00BD3F2E /* Bridge-Header.h */,
+				7831291C1BEA2C8E00BD3F2E /* Bridge-Header.m */,
 				7809C4FF1BE94BAF00E0944D /* Main.storyboard */,
 				7809C5021BE94BAF00E0944D /* Assets.xcassets */,
 				7809C5041BE94BAF00E0944D /* LaunchScreen.storyboard */,
 				7809C5071BE94BAF00E0944D /* Info.plist */,
+				7831291A1BEA2C8E00BD3F2E /* Firebase-Bridging-Header.h */,
 			);
 			path = Firebase;
 			sourceTree = "<group>";
@@ -141,10 +151,18 @@
 			path = FirebaseUITests;
 			sourceTree = "<group>";
 		};
+		78E83E0F1BEA296800016698 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				78E83E101BEA297700016698 /* Constants.swift */,
+			);
+			name = Constants;
+			sourceTree = "<group>";
+		};
 		AA9F185104229B7318A718CA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				221CD9B0FB5D61E8DA515CBC /* Pods_Firebase.framework */,
+				C364257D4E77B3E846E0CE5A /* libPods-Firebase.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -332,7 +350,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				7809C4FE1BE94BAF00E0944D /* ViewController.swift in Sources */,
+				7831291D1BEA2C8E00BD3F2E /* Bridge-Header.m in Sources */,
 				7809C4FC1BE94BAE00E0944D /* AppDelegate.swift in Sources */,
+				78E83E111BEA297700016698 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
